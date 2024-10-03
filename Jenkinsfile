@@ -18,7 +18,7 @@ pipeline {
 
         stage('Configurar entorno Desafio01') {
             steps {
-                scripts{
+                script{
                     def pythonPath = 'C:\\Users\\Wiemor\\AppData\\Local\\Programs\\Python\\Python311'
                     env.PATH = "${pythonPath};${pythonPath}\\Scripts;${env.PATH}"
 
