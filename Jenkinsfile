@@ -18,13 +18,21 @@ pipeline {
 
         stage('Configurar entorno Desafio01') {
             steps {
-                dir('Desafio01') {
-                    script {
-                        bat '''
-                            python -m venv %DESAFIO01_ENV%
-                            %DESAFIO01_ENV%\\Scripts\\activate.bat
-                            pip install -r requirements.txt
-                        ''' 
+                scripts{
+                    def pythonPath = 'C:\\Users\\Wiemor\\AppData\\Local\\Programs\\Python\\Python311'
+                    env.PATH = "${pythonPath};${pythonPath}\\Scripts;${env.PATH}"
+
+                    bat 'python --version'
+                    bat 'pip --version'
+                    
+                    dir('Desafio01') {
+                        script {
+                            bat '''
+                                python -m venv %DESAFIO01_ENV%
+                                %DESAFIO01_ENV%\\Scripts\\activate.bat
+                                pip install -r requirements.txt
+                            ''' 
+                        }
                     }
                 }
             }
