@@ -45,7 +45,6 @@ pipeline {
                         try {
                             bat '''
                                 call ${DESAFIO01_ENV}\\Scripts\\activate.bat
-                                cd features
                                 behave
                             '''
                         } catch (Exception e) {
