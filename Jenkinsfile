@@ -44,7 +44,7 @@ pipeline {
                     script {
                         try {
                             bat '''
-                                behave
+                                %DESAFIO01_ENV%\\Scripts\\python.exe -m behave
                             '''
                         } catch (Exception e) {
                             currentBuild.result = 'FAILURE'
