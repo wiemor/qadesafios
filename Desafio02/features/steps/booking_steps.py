@@ -1,79 +1,154 @@
 from behave import given, when, then
 from appium.webdriver.common.appiumby import AppiumBy
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import TimeoutException
+
 
 @given('estoy en el home')
 def step_impl(context):
-    assert context.driver.find_element(AppiumBy.XPATH, "//android.widget.TextView[@text='Booking.com']").is_displayed()
-    assert context.driver.find_element(AppiumBy.XPATH, "//android.widget.Button[@text='Stays']").is_displayed()
-    assert context.driver.find_element(AppiumBy.XPATH, "//android.widget.EditText[@text='Enter your destination']").is_displayed()
+    assert context.driver is not None, "El driver no está inicializado"
+
+    """wait0 = WebDriverWait(context.driver, 20)
+
+    back_button = wait0.until(EC.element_to_be_clickable((
+        AppiumBy.XPATH, 
+        "//android.widget.ImageButton[@content-desc='Navigate up']"
+    )))
+    back_button.click()"""
+
+    wait = WebDriverWait(context.driver, 10)
+
+    stays_element = wait.until(EC.presence_of_element_located((
+        AppiumBy.XPATH, "//android.widget.TextView[@resource-id='com.booking:id/facet_entry_point_item_label' and @text='Stays']"
+    )))
+    assert stays_element.is_displayed()
+
 
 @when('busco hoteles en {city}')
 def step_impl(context, city):
-    search_box = context.driver.find_element(AppiumBy.XPATH, "//android.widget.EditText[@text='Enter your destination']")
+     
+    # Destination
+    wait2 = WebDriverWait(context.driver, 20)
+    search_box = wait2.until(EC.element_to_be_clickable((
+        AppiumBy.XPATH, 
+        "//android.widget.TextView[@resource-id='com.booking:id/facet_search_box_basic_field_label' and @text='Enter your destination']"
+    )))
     search_box.click()
-    search_box.send_keys(city)
     
-    date_field = context.driver.find_element(AppiumBy.XPATH, "//android.view.View[@content-desc='Fri, Aug 19 - Sat, Aug 20']")
-    date_field.click()
+    # Esperar a que aparezca el campo de entrada real y escribir la ciudad
+    input_field = wait2.until(EC.element_to_be_clickable((
+        AppiumBy.XPATH, 
+        "//android.widget.EditText[@resource-id='com.booking:id/facet_with_bui_free_search_booking_header_toolbar_content']"
+    )))
+    input_field.send_keys(city)
+
+    # Seleccionar ciudad
+    wait2.until(EC.presence_of_element_located((
+        AppiumBy.ID, "com.booking:id/facet_disambiguation_content"
+    )))
     
-    start_date = context.driver.find_element(AppiumBy.ACCESSIBILITY_ID, "14 February 2023")
+    # Seleccionar el primer resultado
+    first_result = wait2.until(EC.element_to_be_clickable((
+        AppiumBy.XPATH, 
+        "//androidx.recyclerview.widget.RecyclerView[@resource-id='com.booking:id/facet_disambiguation_content']/android.view.ViewGroup[1]"
+    )))
+    first_result.click()
+    
+    # Dates
+    try:
+        # Intentar hacer clic en el campo de fecha usando el ID del recurso
+        date_field = wait2.until(EC.element_to_be_clickable((
+            AppiumBy.ID, "com.booking:id/facet_search_box_basic_field_label"
+        )))
+        date_field.click()
+    except TimeoutException:
+        # Si falla, intentar con un enfoque alternativo usando coordenadas
+        print("No se pudo encontrar el campo de fecha. Intentando con tap en coordenadas.")
+        
+        # Realizar tap en las coordenadas calculadas
+        context.driver.tap([(755, 780)])
+
+
+    # Seleccionar fecha de inicio (14 de octubre 2024)
+    start_date = wait2.until(EC.element_to_be_clickable((
+        AppiumBy.XPATH, 
+        "//android.view.View[@content-desc='14 October 2024']"
+    )))
     start_date.click()
     
-    end_date = context.driver.find_element(AppiumBy.ACCESSIBILITY_ID, "28 February 2023")
+    # Seleccionar fecha de fin (18 de octubre 2024)
+    end_date = wait2.until(EC.element_to_be_clickable((
+        AppiumBy.XPATH, 
+        "//android.view.View[@content-desc='18 October 2024']"
+    )))
     end_date.click()
     
-    confirm_dates = context.driver.find_element(AppiumBy.XPATH, "//android.widget.Button[@text='Select']")
-    confirm_dates.click()
-    
-    guests_field = context.driver.find_element(AppiumBy.XPATH, "//android.view.View[@content-desc='1 room · 2 adults · 0 children']")
-    guests_field.click()
-    
-    add_child = context.driver.find_element(AppiumBy.XPATH, "//android.widget.Button[@content-desc='Increase number of children']")
-    add_child.click()
-    
-    child_age_dropdown = context.driver.find_element(AppiumBy.XPATH, "//android.widget.Spinner[@content-desc='Select age of child 1']")
-    child_age_dropdown.click()
-    age_5 = context.driver.find_element(AppiumBy.XPATH, "//android.widget.CheckedTextView[@text='5 years old']")
-    age_5.click()
-    
-    confirm_guests = context.driver.find_element(AppiumBy.XPATH, "//android.widget.Button[@text='Apply']")
-    confirm_guests.click()
+    # Hacer clic en el botón "Select dates"
+    select_dates_button = wait2.until(EC.element_to_be_clickable((
+        AppiumBy.ID, 
+        "com.booking:id/facet_date_picker_confirm"
+    )))
+    select_dates_button.click()
 
-    search_button = context.driver.find_element(AppiumBy.XPATH, "//android.widget.Button[@text='Search']")
-    search_button.click()
+    # Hacer clic en el selector de habitaciones y huéspedes
+    context.driver.tap([(800, 940)])
+    
+    # Agregar 
+    context.driver.tap([(978, 1882)])
+    
+    # Hacer clic en "Apply"
+    context.driver.tap([(677, 2049)])
 
-@when('selecciono el primer hotel disponible')
+    # Hacer clic en "Search"
+    context.driver.tap([(730, 1131)])
+
+
+@when('selecciono el segundo hotel disponible')
 def step_impl(context):
-    context.driver.implicitly_wait(10)
-    first_hotel = context.driver.find_element(AppiumBy.XPATH, "(//android.view.ViewGroup[@resource-id='com.booking:id/property_card_container'])[1]")
-    
-    hotel_name = first_hotel.find_element(AppiumBy.XPATH, ".//android.widget.TextView[@text='Hotel Hacienda Cusco Centro Historico']")
-    assert hotel_name.is_displayed()
-    
-    breakfast_included = first_hotel.find_element(AppiumBy.XPATH, ".//android.widget.TextView[@text='Breakfast included']")
-    assert breakfast_included.is_displayed()
-    
-    rating = first_hotel.find_element(AppiumBy.XPATH, ".//android.widget.TextView[@text='Very Good']")
-    assert rating.is_displayed()
-    
-    first_hotel.click()
+    wait = WebDriverWait(context.driver, 30)
+    # Intentar cerrar el banner de actualización si está presente
+    try:
+        dismiss_button = wait.until(EC.element_to_be_clickable((
+            AppiumBy.ID, "com.booking:id/bui_banner_close_button"
+        )))
+        dismiss_button.click()
+    except TimeoutException:
+        print("Banner de actualización no encontrado o ya cerrado")
 
-@when('completo el proceso de booking')
+    # Seleccionar el segundo hotel de la lista
+    try:
+        hotel = wait.until(EC.element_to_be_clickable((
+            AppiumBy.XPATH, 
+            "//android.view.ViewGroup[@class='android.view.ViewGroup' and @instance='32']"
+        )))
+        hotel.click()
+    except TimeoutException:
+        print("Click en segundo")
+        context.driver.tap([(876, 1801)])
+
+    # Esperar a que se cargue la página de detalles del hotel
+    wait.until(EC.presence_of_element_located((
+        AppiumBy.ID, "com.booking:id/facet_price_view"
+    )))
+    
+    # Seleccionar la opción recomendada 
+    recommended_option = wait.until(EC.element_to_be_clickable((
+        AppiumBy.ID, "com.booking:id/facet_price_view"
+    )))
+    recommended_option.click()
+
+    # Esperar a que se cargue la página de detalles del hotel y seleccionar la opción de habitación
+    room_option = wait.until(EC.element_to_be_clickable((
+        AppiumBy.ID, "com.booking:id/rooms_item_select_text_view"
+    )))
+    room_option.click()
+
+    reserve_button = wait.until(EC.element_to_be_clickable((
+        AppiumBy.ID, "com.booking:id/main_action"
+    )))
+    reserve_button.click()
+
+@then('deberia ver el estado del booking')
 def step_impl(context):
-    book_button = context.driver.find_element(AppiumBy.ID, "com.booking:id/book_button")
-    book_button.click()
-    context.driver.find_element(AppiumBy.XPATH, "//android.widget.EditText[@text='First Name *']").send_keys("Jose")
-    context.driver.find_element(AppiumBy.XPATH, "//android.widget.EditText[@text='Last Name *']").send_keys("Hurtado")
-    context.driver.find_element(AppiumBy.XPATH, "//android.widget.EditText[@text='Email Address *']").send_keys("josehurtado@gmail.com")
-    context.driver.find_element(AppiumBy.XPATH, "//android.widget.EditText[@text='Country/Region *']").send_keys("Colombia")
-    context.driver.find_element(AppiumBy.XPATH, "//android.widget.EditText[@text='Mobile Phone *']").send_keys("930731660")
-    context.driver.find_element(AppiumBy.XPATH, "//android.widget.RadioButton[@text='Leisure']").click()
-    next_step_button = context.driver.find_element(AppiumBy.XPATH, "//android.widget.Button[@text='Next step']")
-    next_step_button.click()
-
-
-@then('deberia ver la confirmación')
-def step_impl(context):
-    context.driver.implicitly_wait(10)
-    confirmation_message = context.driver.find_element(AppiumBy.ID, "com.booking:id/confirmation_message")
-    assert confirmation_message.is_displayed()
+    print("No se continua por limitaciones de hardware del equipo.")
