@@ -45,7 +45,7 @@ pipeline {
                         try {
                             bat '''
                                 cd ..
-                                call ${DESAFIO01_ENV}\\Scripts\\activate.bat
+                                call  %DESAFIO01_ENV%\\Scripts\\activate.bat
                                 cd features
                                 behave
                             '''
