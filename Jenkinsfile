@@ -40,14 +40,13 @@ pipeline {
 
         stage('Run Behave Tests for Desafio 1') {
             steps {
-                dir('desafio01/features') {
+                dir('desafio01') {
                     script {
                         try {
                             bat '''
-                                cd ..
-                                call  %DESAFIO01_ENV%\\Scripts\\activate.bat
-                                cd features
-                                behave
+                                if not exist features\\reports mkdir features\\reports
+                                call %DESAFIO01_ENV%\\Scripts\\activate.bat
+                                behave -f html -o features/reports/behave-report.html --junit --junit-directory features/reports
                             '''
                         } catch (Exception e) {
                             currentBuild.result = 'FAILURE'
@@ -61,7 +60,7 @@ pipeline {
     post {
         always {
             archiveArtifacts artifacts: 'Desafio01/features/reports/**/*.html', allowEmptyArchive: true
-            junit 'Desafio01/features/reports/**/*.xml'
+            junit testResults: 'Desafio01/features/reports/*.xml', allowEmptyResults: true
         }
     }
 }
