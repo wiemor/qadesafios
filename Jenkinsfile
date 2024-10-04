@@ -46,7 +46,8 @@ pipeline {
                             bat '''
                                 if not exist features\\reports mkdir features\\reports
                                 call %DESAFIO01_ENV%\\Scripts\\activate.bat
-                                behave -f html -o features/reports/behave-report.html --junit --junit-directory features/reports
+                                behave --version
+                                behave -f pretty -f json -o features/reports/behave-report.json --junit --junit-directory features/reports
                             '''
                         } catch (Exception e) {
                             currentBuild.result = 'FAILURE'
@@ -59,7 +60,7 @@ pipeline {
     }
     post {
         always {
-            archiveArtifacts artifacts: 'Desafio01/features/reports/**/*.html', allowEmptyArchive: true
+            archiveArtifacts artifacts: 'Desafio01/features/reports/**/*.*', allowEmptyArchive: true
             junit testResults: 'Desafio01/features/reports/*.xml', allowEmptyResults: true
         }
     }
