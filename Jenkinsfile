@@ -29,8 +29,8 @@ pipeline {
                         script {
                             bat '''
                                 python -m venv %DESAFIO01_ENV%
-                                %DESAFIO01_ENV%\\Scripts\\activate.bat
-                                pip install -r requirements.txt
+                                call %DESAFIO01_ENV%\\Scripts\\activate.bat
+                                %DESAFIO01_ENV%\\Scripts\\python.exe -m pip install -r requirements.txt
                             ''' 
                         }
                     }
