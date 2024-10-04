@@ -75,3 +75,8 @@ python -m venv env
 # Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
 pip install -r requirements.txt
 ```
+
+```
+# ejecucion de appium
+appium --base-path /wd/hub --relaxed-security
+```
