@@ -15,7 +15,7 @@ def before_scenario(context, scenario):
     options = UiAutomator2Options().load_capabilities(capabilities)
 
     try:
-        context.driver = webdriver.Remote('http://localhost:4723', options=options)
+        context.driver = webdriver.Remote('http://localhost:4723/wd/hub', options=options)
         context.driver.implicitly_wait(10)
         print("Driver setup successful")
     except Exception as e:
