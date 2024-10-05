@@ -1,0 +1,8 @@
+Feature: Booking App # features/booking.feature:1
+
+  Scenario: Booking correcto                   # features/booking.feature:2
+    Given estoy en el home                     # features/steps/booking_steps.py:8
+    When busco hoteles en "Cusco"              # features/steps/booking_steps.py:28
+    And selecciono el segundo hotel disponible # features/steps/booking_steps.py:107
+    Then deberia ver el estado del booking     # features/steps/booking_steps.py:152
+

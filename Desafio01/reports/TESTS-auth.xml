@@ -1,0 +1,23 @@
+<testsuite name="auth.API Auth" tests="2" errors="0" failures="0" skipped="0" time="1.005116" timestamp="2024-10-04T05:12:15.245430" hostname="LAPTOP-VI21RQTS"><testcase classname="auth.API Auth" name="Autenticacion valida" status="passed" time="0.553284"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Autenticacion valida
+    Given que tengo credenciales validas ... passed in 0.000s
+    When me autentico en la API con credenciales validas ... passed in 0.553s
+    Then deberia recibir un token valido ... passed in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="auth.API Auth" name="Autenticacion invalida" status="passed" time="0.451832"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Autenticacion invalida
+    Given que tengo credenciales invalidas ... passed in 0.001s
+    When me autentico en la API con credenciales invalidas ... passed in 0.451s
+    Then deberia recibir un mensaje de error ... passed in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

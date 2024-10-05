@@ -3,4 +3,6 @@ Feature: Booking App
     Given estoy en el home
     When busco hoteles en "Cusco"
     And selecciono el segundo hotel disponible
-    Then deberia ver el estado del booking
+    And ingreso informacion personal
+    And ingreso credit card information
+    Then deberia ver el booking

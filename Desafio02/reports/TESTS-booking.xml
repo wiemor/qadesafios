@@ -1,0 +1,20 @@
+<testsuite name="booking.Booking App" tests="1" errors="0" failures="0" skipped="0" time="143.311926" timestamp="2024-10-04T18:58:00.260422" hostname="LAPTOP-VI21RQTS"><testcase classname="booking.Booking App" name="Booking correcto" status="passed" time="143.311926"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Booking correcto
+    Given estoy en el home ... passed in 4.112s
+    When busco hoteles en "Cusco" ... passed in 52.351s
+    And selecciono el segundo hotel disponible ... passed in 86.849s
+    Then deberia ver el estado del booking ... passed in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+No se pudo encontrar el campo de fecha. Intentando con tap en coordenadas.
+Banner de actualización no encontrado o ya cerrado
+Click en segundo
+No se continua por limitaciones de hardware del equipo.
+
+]]>
+</system-out></testcase></testsuite>

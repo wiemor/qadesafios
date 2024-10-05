@@ -3,21 +3,22 @@ from appium.webdriver.common.appiumby import AppiumBy
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
+from selenium.webdriver.common.keys import Keys
+import time
+import os
 
 
 @given('estoy en el home')
 def step_impl(context):
     assert context.driver is not None, "El driver no está inicializado"
 
-    """wait0 = WebDriverWait(context.driver, 20)
+    wait = WebDriverWait(context.driver, 20)
 
-    back_button = wait0.until(EC.element_to_be_clickable((
+    back_button = wait.until(EC.element_to_be_clickable((
         AppiumBy.XPATH, 
         "//android.widget.ImageButton[@content-desc='Navigate up']"
     )))
-    back_button.click()"""
-
-    wait = WebDriverWait(context.driver, 10)
+    back_button.click()
 
     stays_element = wait.until(EC.presence_of_element_located((
         AppiumBy.XPATH, "//android.widget.TextView[@resource-id='com.booking:id/facet_entry_point_item_label' and @text='Stays']"
@@ -27,29 +28,29 @@ def step_impl(context):
 
 @when('busco hoteles en {city}')
 def step_impl(context, city):
+    wait = WebDriverWait(context.driver, 7)
      
     # Destination
-    wait2 = WebDriverWait(context.driver, 20)
-    search_box = wait2.until(EC.element_to_be_clickable((
+    search_box = wait.until(EC.element_to_be_clickable((
         AppiumBy.XPATH, 
         "//android.widget.TextView[@resource-id='com.booking:id/facet_search_box_basic_field_label' and @text='Enter your destination']"
     )))
     search_box.click()
     
     # Esperar a que aparezca el campo de entrada real y escribir la ciudad
-    input_field = wait2.until(EC.element_to_be_clickable((
+    input_field = wait.until(EC.element_to_be_clickable((
         AppiumBy.XPATH, 
         "//android.widget.EditText[@resource-id='com.booking:id/facet_with_bui_free_search_booking_header_toolbar_content']"
     )))
     input_field.send_keys(city)
 
     # Seleccionar ciudad
-    wait2.until(EC.presence_of_element_located((
+    wait.until(EC.presence_of_element_located((
         AppiumBy.ID, "com.booking:id/facet_disambiguation_content"
     )))
     
     # Seleccionar el primer resultado
-    first_result = wait2.until(EC.element_to_be_clickable((
+    first_result = wait.until(EC.element_to_be_clickable((
         AppiumBy.XPATH, 
         "//androidx.recyclerview.widget.RecyclerView[@resource-id='com.booking:id/facet_disambiguation_content']/android.view.ViewGroup[1]"
     )))
@@ -58,34 +59,30 @@ def step_impl(context, city):
     # Dates
     try:
         # Intentar hacer clic en el campo de fecha usando el ID del recurso
-        date_field = wait2.until(EC.element_to_be_clickable((
+        date_field = wait.until(EC.element_to_be_clickable((
             AppiumBy.ID, "com.booking:id/facet_search_box_basic_field_label"
         )))
         date_field.click()
-    except TimeoutException:
-        # Si falla, intentar con un enfoque alternativo usando coordenadas
-        print("No se pudo encontrar el campo de fecha. Intentando con tap en coordenadas.")
-        
+    except TimeoutException:        
         # Realizar tap en las coordenadas calculadas
         context.driver.tap([(755, 780)])
 
-
     # Seleccionar fecha de inicio (14 de octubre 2024)
-    start_date = wait2.until(EC.element_to_be_clickable((
+    start_date = wait.until(EC.element_to_be_clickable((
         AppiumBy.XPATH, 
         "//android.view.View[@content-desc='14 October 2024']"
     )))
     start_date.click()
     
     # Seleccionar fecha de fin (18 de octubre 2024)
-    end_date = wait2.until(EC.element_to_be_clickable((
+    end_date = wait.until(EC.element_to_be_clickable((
         AppiumBy.XPATH, 
         "//android.view.View[@content-desc='18 October 2024']"
     )))
     end_date.click()
     
     # Hacer clic en el botón "Select dates"
-    select_dates_button = wait2.until(EC.element_to_be_clickable((
+    select_dates_button = wait.until(EC.element_to_be_clickable((
         AppiumBy.ID, 
         "com.booking:id/facet_date_picker_confirm"
     )))
@@ -99,6 +96,7 @@ def step_impl(context, city):
     
     # Hacer clic en "Apply"
     context.driver.tap([(677, 2049)])
+    context.driver.tap([(677, 2049)])
 
     # Hacer clic en "Search"
     context.driver.tap([(730, 1131)])
@@ -106,15 +104,15 @@ def step_impl(context, city):
 
 @when('selecciono el segundo hotel disponible')
 def step_impl(context):
-    wait = WebDriverWait(context.driver, 30)
+    wait = WebDriverWait(context.driver, 5)
     # Intentar cerrar el banner de actualización si está presente
-    try:
+    """try:
         dismiss_button = wait.until(EC.element_to_be_clickable((
             AppiumBy.ID, "com.booking:id/bui_banner_close_button"
         )))
         dismiss_button.click()
     except TimeoutException:
-        print("Banner de actualización no encontrado o ya cerrado")
+        print("Banner de actualización no encontrado o ya cerrado")"""
 
     # Seleccionar el segundo hotel de la lista
     try:
@@ -124,7 +122,6 @@ def step_impl(context):
         )))
         hotel.click()
     except TimeoutException:
-        print("Click en segundo")
         context.driver.tap([(876, 1801)])
 
     # Esperar a que se cargue la página de detalles del hotel
@@ -149,6 +146,78 @@ def step_impl(context):
     )))
     reserve_button.click()
 
-@then('deberia ver el estado del booking')
+@when('ingreso informacion personal')
 def step_impl(context):
-    print("No se continua por limitaciones de hardware del equipo.")
+
+    # Input First Name
+    time.sleep(2) 
+    context.driver.press_keycode(61)
+    context.driver.press_keycode(61)
+    context.driver.press_keycode(61)
+    time.sleep(0.5) 
+
+    print("ini first Name")
+    context.driver.press_keycode(38)  # j
+    context.driver.press_keycode(43)  # o
+    context.driver.press_keycode(47)  # s
+    context.driver.press_keycode(33)  # e
+    """
+    for char in "Hurt":
+        print("caracter: ",char, ord(char))
+        context.driver.press_keycode(ord(char))
+    time.sleep(0.5)
+    print("fin first Name")
+    
+    print("ini last name")
+    # Last Name
+    for char in "Hurtado":
+        context.driver.press_keycode(ord(char))
+    time.sleep(0.5)
+    context.driver.press_keycode(61)
+    print("fin last name")
+
+
+    # Email address
+    for char in "josehurtado@gmail.com":
+        context.driver.press_keycode(ord(char))
+    time.sleep(0.5)
+    context.driver.press_keycode(61)
+    context.driver.press_keycode(61)
+
+    # Mobile Phone
+    for char in "930731660":
+        context.driver.press_keycode(ord(char))
+    time.sleep(0.5)
+    context.driver.press_keycode(61)
+    context.driver.press_keycode(61)
+
+    # Presionar SPACE
+    context.driver.press_keycode(62)
+
+    # Presionar ESCAPE
+    context.driver.press_keycode(111)
+
+    # Next Step
+    context.driver.tap([(500, 2100)])
+
+    # Final Step
+    context.driver.tap([(500, 2100)])"""
+
+@when('ingreso credit card information')
+def step_impl(context):
+
+    # Card Number
+    """context.driver.tap([(500, 700)])
+    for char in "4555 7887 6544 3333":
+        context.driver.press_keycode(ord(char))
+    time.sleep(0.5)
+    context.driver.press_keycode(61)
+
+    # Holder's Name
+    for char in "0225":
+        context.driver.press_keycode(ord(char))
+    time.sleep(0.5)"""
+ 
+@then('deberia ver el booking')
+def step_impl(context):
+    print("Recuperar precio.")
