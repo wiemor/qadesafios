@@ -149,36 +149,36 @@ def step_impl(context):
 @when('ingreso informacion personal')
 def step_impl(context):
 
+    time.sleep(1) 
     # Input First Name
-    time.sleep(2) 
     context.driver.press_keycode(61)
     context.driver.press_keycode(61)
     context.driver.press_keycode(61)
     time.sleep(0.5) 
 
-    print("ini first Name")
-    context.driver.press_keycode(38)  # j
+    # First Name
+    context.driver.press_keycode(38) # j
     context.driver.press_keycode(43)  # o
-    context.driver.press_keycode(47)  # s
-    context.driver.press_keycode(33)  # e
-    """
-    for char in "Hurt":
-        print("caracter: ",char, ord(char))
-        context.driver.press_keycode(ord(char))
-    time.sleep(0.5)
-    print("fin first Name")
+    context.driver.press_keycode(47) # s
+    context.driver.press_keycode(33) # e
+    context.driver.press_keycode(61) # tab
     
-    print("ini last name")
     # Last Name
-    for char in "Hurtado":
-        context.driver.press_keycode(ord(char))
-    time.sleep(0.5)
+        'h'context.driver.press_keycode( 36)
+        , 'u'context.driver.press_keycode( 49)
+        , 'r'context.driver.press_keycode( 46)
+        , 't'context.driver.press_keycode( 48)
+        , 'a'context.driver.press_keycode( 29)
+        , 'd'context.driver.press_keycode( 32)
+        , 'o'context.driver.press_keycode( 43)
+        
+
     context.driver.press_keycode(61)
     print("fin last name")
 
 
     # Email address
-    for char in "josehurtado@gmail.com":
+    """for char in "josehurtado@gmail.com":
         context.driver.press_keycode(ord(char))
     time.sleep(0.5)
     context.driver.press_keycode(61)
