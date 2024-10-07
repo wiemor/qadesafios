@@ -149,7 +149,22 @@ def step_impl(context):
 @when('ingreso informacion personal')
 def step_impl(context):
 
-    time.sleep(1) 
+    wait = WebDriverWait(context.driver, 5)
+
+    # First Name
+    input_field_first_name = wait.until(EC.element_to_be_clickable((
+        AppiumBy.XPATH, 
+        "//android.widget.EditText[@resource-id='com.booking:id/bui_input_container_content']"
+    )))
+    input_field_first_name.send_keys("Jose")
+
+    # City 
+    input_field_city = wait.until(EC.element_to_be_clickable((
+        AppiumBy.XPATH, 
+        "//android.widget.EditText[@resource-id='com.booking:id/bui_input_container_content_77_1027_926_1093']"
+    )))
+    input_field_city.send_keys("Lima")
+    """
     # Input First Name
     context.driver.press_keycode(61)
     context.driver.press_keycode(61)
@@ -163,19 +178,10 @@ def step_impl(context):
     context.driver.press_keycode(33) # e
     context.driver.press_keycode(61) # tab
     
-    # Last Name
-        'h'context.driver.press_keycode( 36)
-        , 'u'context.driver.press_keycode( 49)
-        , 'r'context.driver.press_keycode( 46)
-        , 't'context.driver.press_keycode( 48)
-        , 'a'context.driver.press_keycode( 29)
-        , 'd'context.driver.press_keycode( 32)
-        , 'o'context.driver.press_keycode( 43)
-        
+       
 
     context.driver.press_keycode(61)
-    print("fin last name")
-
+    print("fin last name")"""
 
     # Email address
     """for char in "josehurtado@gmail.com":
