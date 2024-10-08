@@ -96,13 +96,16 @@ def select_leisure_option(d, max_attempts=3):
     while attempts < max_attempts:
         try:
             # Intento 1: Usar el ID de recurso específico
-            element = d(resourceId="com.booking:id/business_purpose_leisure_1")
+            """element = d(resourceId="com.booking:id/business_purpose_leisure_1")
             if element.exists():
                 element.click()
                 if verify_selection(d, "Leisure"):
                     print("Leisure option selected successfully using resource ID")
                     return True
-
+                
+            print("intento:",attempts,"-paso1")
+            time.sleep(10)  # Esperar antes de intentar de nuevo
+            """
             # Intento 2: Usar el texto "Leisure"
             element = d(text="Leisure")
             if element.exists():
@@ -110,14 +113,21 @@ def select_leisure_option(d, max_attempts=3):
                 if verify_selection(d, "Leisure"):
                     print("Leisure option selected successfully using text")
                     return True
+                
+            print("intento:",attempts,"-paso2")
+            time.sleep(10)  # Esperar antes de intentar de nuevo
 
             # Intento 3: Usar XPath
-            element = d.xpath('//*[@text="Leisure"]')
+            """element = d.xpath('//*[@text="Leisure"]')
             if element.exists:
                 element.click()
                 if verify_selection(d, "Leisure"):
                     print("Leisure option selected successfully using XPath")
                     return True
+
+            print("intento:",attempts,"-paso3")
+            time.sleep(10)  # Esperar antes de intentar de nuevo
+            """
 
             # Si llegamos aquí, ningún intento funcionó
             print(f"Attempt {attempts + 1} failed to select Leisure option")

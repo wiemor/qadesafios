@@ -60,11 +60,10 @@ def step_impl(context, city):
     try:
         # Intentar hacer clic en el campo de fecha usando el ID del recurso
         date_field = wait.until(EC.element_to_be_clickable((
-            AppiumBy.ID, "com.booking:id/facet_search_box_basic_field_label"
+            AppiumBy.ID, "com.booking:id/facet_search_box_basic_field_label_2"
         )))
         date_field.click()
     except TimeoutException:        
-        # Realizar tap en las coordenadas calculadas
         context.driver.tap([(755, 780)])
 
     # Seleccionar fecha de inicio (14 de octubre 2024)
@@ -146,6 +145,7 @@ def step_impl(context):
     )))
     reserve_button.click()
 
+
 @when('ingreso informacion personal')
 def step_impl(context):
 
@@ -158,12 +158,106 @@ def step_impl(context):
     )))
     input_field_first_name.send_keys("Jose")
 
+    input_field_last_name = wait.until(EC.element_to_be_clickable((
+        AppiumBy.XPATH, 
+        "//android.widget.EditText[@resource-id='com.booking:id/bui_input_container_content_2']"
+    )))
+    input_field_last_name.send_keys("Hurtado")
+
+    """
+    wait = WebDriverWait(context.driver, 5)
+
+    # Contenedor
+    container = wait.until(EC.presence_of_element_located((AppiumBy.ID, "com.booking:id/bui_input_container_content")))
+    input_fields = container.find_elements(AppiumBy.CLASS_NAME, "android.widget.EditText")
+
+    # First Name
+    input_fields[0].send_keys("Jose") 
+
+    # Last Name
+    input_fields[1].send_keys("Hurtado") 
+
+    # Email
+    input_fields[2].send_keys("jose.hurtado@email.com") 
+    """
+    """ input_field_first_name = wait.until(EC.element_to_be_clickable((
+        AppiumBy.XPATH, 
+        "//android.widget.EditText[@resource-id='com.booking:id/bui_input_container_content_1']"
+    )))
+    input_field_first_name.send_keys("Jose")
+
+    # Last Name
+    input_field_last_name = wait.until(EC.element_to_be_clickable((
+        AppiumBy.XPATH, 
+        "//android.widget.EditText[@resource-id='com.booking:id/bui_input_container_content_2']"
+    )))
+    input_field_last_name.send_keys("Hurtado")
+    """
+    # Ensure the app is in the foreground
+    """context.device.app_start("com.booking")
+    context.device.wait_activity(".flights.FlightSearchActivity", timeout=10)
+
+    # Fill the form
+    input_text_to_element(context.device, "com.booking:id/bui_input_container_content_1", "John")
+    input_text_to_element(context.device, "com.booking:id/bui_input_container_content_2", "Doe")
+    input_text_to_element(context.device, "com.booking:id/bui_input_container_content_3", "john.doe@example.com")
+    input_text_to_element(context.device, "com.booking:id/bui_input_container_content_4", "Colombia")
+    input_text_to_element(context.device, "com.booking:id/bui_input_container_content_5", "999999999")
+
+    # Select the "Leisure" option
+    context.device(resourceId="com.booking:id/business_purpose_leisure_1").click()"""
+
+def input_text_to_element(device, resource_id, text):
+    element = device(resourceId=resource_id)
+    element.clear_text()
+    element.set_text(text)
+
+    """wait = WebDriverWait(context.driver, 10)
+
+    # First Name
+    input_field_first_name = wait.until(EC.element_to_be_clickable((
+        AppiumBy.ID, 
+        "com.booking:id/bui_input_container_content_1"
+    )))
+    input_field_first_name.send_keys("Jose")
+
+    # Last Name
+    input_field_last_name = wait.until(EC.element_to_be_clickable((
+        AppiumBy.ID, 
+        "com.booking:id/bui_input_container_content_2"
+    )))
+    input_field_last_name.send_keys("Hurtado")
+
+    # Email
+    input_field_email = wait.until(EC.element_to_be_clickable((
+        AppiumBy.ID, 
+        "com.booking:id/bui_input_container_content_3"
+    )))
+    input_field_email.send_keys("jose@email.com")
+
     # City 
     input_field_city = wait.until(EC.element_to_be_clickable((
-        AppiumBy.XPATH, 
-        "//android.widget.EditText[@resource-id='com.booking:id/bui_input_container_content_77_1027_926_1093']"
+        AppiumBy.ID, 
+        "com.booking:id/bui_input_container_content_4"
     )))
     input_field_city.send_keys("Lima")
+
+    # Mobile 
+    input_field_mobile = wait.until(EC.element_to_be_clickable((
+        AppiumBy.ID, 
+        "com.booking:id/bui_input_container_content_5"
+    )))
+    input_field_mobile.send_keys("999999999")
+
+
+    # Leisure
+    element = wait.until(EC.element_to_be_clickable((
+        AppiumBy.XPATH,
+        "//android.widget.RadioButton[@resource-id='com.booking:id/business_purpose_leisure_1' or @text='Leisure']"
+    )))
+    element.click()
+    """
+
     """
     # Input First Name
     context.driver.press_keycode(61)
