@@ -1,0 +1,59 @@
+<testsuite name="booking.API Booking" tests="5" errors="0" failures="0" skipped="0" time="2.945976" timestamp="2024-10-09T17:43:56.367114" hostname="LAPTOP-VI21RQTS"><testcase classname="booking.API Booking" name="Create a booking" status="passed" time="0.549828"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Create a booking
+    Given I have valid booking details ... passed in 0.002s
+    When I create a booking ... passed in 0.548s
+    Then I should receive a confirmation from booking ... passed in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="booking.API Booking" name="Getting details of a booking" status="passed" time="0.69967"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Getting details of a booking
+    Given I have a valid booking ID ... passed in 0.001s
+    When I get the details of the booking ... passed in 0.699s
+    Then I should see the correct booking information ... passed in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="booking.API Booking" name="Update a booking" status="passed" time="0.614551"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Update a booking
+    Given I have a valid token ... passed in 0.000s
+    Given I have a valid booking ID ... passed in 0.000s
+    And I have new booking details ... passed in 0.001s
+    When I update the booking ... passed in 0.614s
+    Then I should see the updated booking information ... passed in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="booking.API Booking" name="Delete a booking" status="passed" time="0.522691"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Delete a booking
+    Given I have a valid token ... passed in 0.000s
+    Given I have a valid booking ID ... passed in 0.001s
+    When I delete the booking ... passed in 0.522s
+    Then the booking should be deleted successfully ... passed in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="booking.API Booking" name="Trying to create a booking with invalid data" status="passed" time="0.559236"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Trying to create a booking with invalid data
+    Given I have invalid booking details ... passed in 0.000s
+    When I try to create a booking ... passed in 0.558s
+    Then I should receive a validation error ... passed in 0.002s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

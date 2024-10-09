@@ -1,0 +1,11 @@
+<testsuite name="ping.API Ping" tests="1" errors="0" failures="0" skipped="0" time="0.611265" timestamp="2024-10-09T17:43:56.982331" hostname="LAPTOP-VI21RQTS"><testcase classname="ping.API Ping" name="Check availability" status="passed" time="0.611265"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Check availability
+    When I ping the API ... passed in 0.610s
+    Then I should get an OK response ... passed in 0.001s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>
