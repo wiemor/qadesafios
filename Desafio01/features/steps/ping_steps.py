@@ -12,16 +12,15 @@ def api_request(context, method, endpoint, **kwargs):
         print(f"Error en la solicitud a la API: {str(e)}")
         raise
 
-
-@given('que la API está en funcionamiento')
+@given('That the API is up and running')
 def step_impl(context):
     pass
 
-@when('hago ping a la API')
+@when('I ping the API')
 def step_impl(context):
     context.response = api_request(context, 'GET', '')
 
-@then('debería recibir una respuesta OK')
+@then('I should get an OK response')
 def step_impl(context):
     assert context.response.status_code == 201, f"Código de estado esperado 201, pero se recibió {context.response.status_code}"
     assert context.response.text == "Created", f"Respuesta esperada 'Created', pero se recibió '{context.response.text}'"

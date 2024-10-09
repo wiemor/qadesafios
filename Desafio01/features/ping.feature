@@ -1,4 +1,5 @@
 Feature: API Ping
-  Scenario: Verifica disponibilidad
-    When hago ping a la API
-    Then debería recibir una respuesta OK
+  Scenario: Check availability
+    Given: That the API is up and running
+    When I ping the API
+    Then I should get an OK response
