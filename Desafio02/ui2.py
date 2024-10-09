@@ -255,6 +255,18 @@ def scroll_numberpicker_to_value_5yo(d, target_value, max_attempts=20):
     print(f"No se pudo establecer el valor a '{target_value}' después de {max_attempts} intentos")
     return False
 
+def get_element_text_price_final(d, resource_id, timeout=10):
+    try:
+        element = d(resourceId=resource_id)
+        if element.wait(timeout=timeout):
+            return element.get_text()
+        else:
+            print(f"Element with resource ID {resource_id} not found within {timeout} seconds")
+            return None
+    except Exception as e:
+        print(f"Error getting text from element with resource ID {resource_id}: {e}")
+        return None
+    
 def interact_with_booking_app(d):
 
     # City
@@ -334,7 +346,7 @@ def interact_with_booking_app(d):
     if button_select_room.wait(timeout=2) and button_select_room.exists:
         button_select_room.click()
 
-    time.sleep(2)
+    time.sleep(3)
 
     # SELECT ROOM
     button_select_text_room = d(resourceId="com.booking:id/rooms_item_select_text_view")
@@ -347,7 +359,7 @@ def interact_with_booking_app(d):
 
     ######### Filll your data
 
-    time.sleep(1)
+    time.sleep(2)
     input_text_to_element(d, "com.booking:id/bui_input_container_content_1", "John")
     input_text_to_element(d, "com.booking:id/bui_input_container_content_2", "Doe")
     input_text_to_element(d, "com.booking:id/bui_input_container_content_3", "john.doe@example.com")
@@ -381,8 +393,26 @@ def interact_with_booking_app(d):
     button_btn_close = d(resourceId="com.booking:id/bui_bottom_sheet_close")
     if button_btn_close.wait(timeout=2) and button_btn_close.exists:
         button_btn_close.click()
-    
 
+
+    ### CREDIT CARD EXISTS
+    if d(resourceId="com.booking:id/new_credit_card_number_edit").exists:
+        input_text_to_element(d, "com.booking:id/new_credit_card_number_edit_1", "9999999")
+
+        time.sleep(2)
+
+        # Tarjeta Visa
+        d(text="Select your card type").click()
+        time.sleep(1)
+        d(text="Visa").click()
+
+
+        input_text_to_element(d, "com.booking:id/new_credit_card_expiry_date_edit_1", "02/25")        
+
+    # Precio final
+    text = get_element_text_price_final(d, "com.booking:id/title")
+    if text:
+        print(f"The text of the element is: {text}")  
 
 def main():
     d = connect_device()
