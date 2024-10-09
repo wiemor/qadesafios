@@ -1,8 +1,8 @@
 Feature: Booking App
-  Scenario: Booking correcto
-    Given estoy en el home
-    When busco hoteles en "Cusco"
-    And selecciono el segundo hotel disponible
-    And ingreso informacion personal
-    And ingreso credit card information
-    Then deberia ver el booking
+  Scenario: Correct booking
+    Given I am at home
+    When I search for hotels in "Cusco"
+    And I select the second available hotel
+    And I enter personal information
+    And I enter credit card information
+    Then I should see the booking

@@ -95,7 +95,7 @@ def get_element_text(device: u2.Device, resource_id: str, timeout: int = TIMEOUT
     return None
 
 # Step implementations
-@given('estoy en el home')
+@given('I am at home')
 def step_impl(context):
     assert context.d is not None, "uiautomator2 is not initialized"
     back_button = context.d(description="Navigate up")
@@ -105,7 +105,7 @@ def step_impl(context):
     stays_element = context.d(resourceId="com.booking:id/facet_entry_point_item_label", text="Stays")
     assert stays_element.exists, "The 'Stays' element is not present"
 
-@when('busco hoteles en {city}')
+@when('I search for hotels in {city}')
 def step_impl(context, city):
     # Search for hotels
     time.sleep(1)
@@ -137,7 +137,7 @@ def step_impl(context, city):
     find_and_click_by_resource_id(context.d, "com.booking:id/group_config_apply_button")
     time.sleep(1)
 
-@when('selecciono el segundo hotel disponible')
+@when('I select the second available hotel')
 def step_impl(context):
     find_and_click_by_resource_id(context.d, "com.booking:id/facet_search_box_cta")
     time.sleep(2)
@@ -151,7 +151,7 @@ def step_impl(context):
     time.sleep(1)
     context.d(resourceId="com.booking:id/main_action", text="Reserve").click()
 
-@when('ingreso informacion personal')
+@when('I enter personal information')
 def step_impl(context):
     time.sleep(2)
     personal_info = [
@@ -174,7 +174,7 @@ def step_impl(context):
     time.sleep(8)
     find_and_click_by_resource_id(context.d, "com.booking:id/bui_bottom_sheet_close")
 
-@when('ingreso credit card information')
+@when('I enter credit card information')
 def step_impl(context):
     if context.d(resourceId="com.booking:id/new_credit_card_number_edit").exists:
         input_text_to_element(context.d, "com.booking:id/new_credit_card_number_edit_1", "9999999")
@@ -185,8 +185,7 @@ def step_impl(context):
         input_text_to_element(context.d, "com.booking:id/new_credit_card_expiry_date_edit_1", "02/25")
 
 
-
-@then('deberia ver el booking')
+@then('I should see the booking')
 def step_impl(context):
     final_price = get_element_text(context.d, "com.booking:id/title")
     if final_price:
