@@ -47,7 +47,7 @@ cd qaautomationengineer
 
 ### 2. Desafio 01:
 
-La estrategia de pruebas se encuentra dentro del directorio desafio01 con del nombre de **Plan de Pruebas 01.docx**. Asi como, tambien la carpeta **reports**
+**Plan de Pruebas 01.docx** esta dento de a carpeta Desafio01. Asi como, tambien la carpeta **reports**
 
 ```
 # Entorno virtual y dependencias:
@@ -67,7 +67,7 @@ behave
 
 ### 3. Desafio 02:
 
-La estrategia de pruebas se encuentra dentro del directorio desafio02 con del nombre de **Plan de Pruebas 02.docx**. Asi como, tambien la carpeta **reports**
+**Plan de Pruebas 02.docx** esta dento de a carpeta Desafio02. Asi como, tambien la carpeta **reports**
 
 ```
 # Entorno virtual y dependencias:
