@@ -1,37 +1,39 @@
-from appium import webdriver
-from appium.options.android import UiAutomator2Options
+import uiautomator2 as u2
+import time
 
 def before_all(context):
-    capabilities = {
-        'platformName': 'Android',
-        'automationName': 'UiAutomator2',
-        'adbExecTimeout': 250000,
-        "platformVersion": "11",  
-        'deviceName': 'emulador-5554', 
-        'app': 'C:\\codes\\qadesafios\\Desafio02\\app\\booking-com-32-9.apk',
-        'appPackage': 'com.booking',
-        'appActivity': 'com.booking.startup.HomeActivity',
-        'noReset': True,
-        'fullReset': False,
-        'autoGrantPermissions': True,
-        'allowTestPackages': True,
-        'ignoreHiddenApiPolicyError': True,
-    }
-
-    options = UiAutomator2Options().load_capabilities(capabilities)
-
     try:
-        print("Attempting to connect to Appium server...")
-        context.driver = webdriver.Remote('http://localhost:4723/wd/hub', options=options)
-        print("Connection successful, setting implicit wait...")
-        context.driver.implicitly_wait(30)
-        print("Driver setup complete")
+        print("Initializing uiautomator2...")
+        context.d = u2.connect("emulator-5554")
+        print("uiautomator2 initialization complete")
+
+        # Iniciar la aplicación
+        context.d.app_start("com.booking", "com.booking.startup.HomeActivity")
+        print("Application started")
+
+        # Esperar a que la aplicación se cargue
+        time.sleep(5)
+
+        # Configurar implicitly wait
+        context.d.implicitly_wait(30)
+
     except Exception as e:
-        print(f"Failed to set up driver: {e}")
+        print(f"Failed to set up uiautomator2: {e}")
         raise e
 
 def after_all(context):
-    if hasattr(context, 'driver'):
-        context.driver.quit()
+    if hasattr(context, 'd'):
+        context.d.app_stop("com.booking")
+        print("uiautomator2 session stopped")
     else:
-        print("No driver to quit")
+        print("No uiautomator2 session to stop")
+
+# Puedes agregar más funciones de ayuda aquí si lo necesitas
+def wait_and_click(context, selector, timeout=10):
+    context.d(selector).wait(timeout=timeout)
+    context.d(selector).click()
+
+def wait_and_send_keys(context, selector, text, timeout=10):
+    context.d(selector).wait(timeout=timeout)
+    context.d(selector).clear_text()
+    context.d(selector).send_keys(text)
