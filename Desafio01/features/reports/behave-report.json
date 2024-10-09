@@ -1,0 +1,48 @@
+Feature: API Auth # features/auth.feature:1
+
+  Scenario: Valid authentication                          # features/auth.feature:2
+    Given I have valid credentials                        # features/steps/auth_steps.py:13
+    When I authenticate in the API with valid credentials # features/steps/auth_steps.py:17
+    Then I should receive a valid token                   # features/steps/auth_steps.py:21
+
+  Scenario: Invalid authentication                          # features/auth.feature:7
+    Given I have invalid credentials                        # features/steps/auth_steps.py:28
+    When I authenticate in the API with invalid credentials # features/steps/auth_steps.py:32
+    Then I should receive an error message                  # features/steps/auth_steps.py:36
+
+Feature: API Booking # features/booking.feature:1
+
+  Scenario: Create a booking                          # features/booking.feature:3
+    Given I have valid booking details                # features/steps/booking_steps.py:20
+    When I create a booking                           # features/steps/booking_steps.py:34
+    Then I should receive a confirmation from booking # features/steps/booking_steps.py:39
+
+  Scenario: Getting details of a booking              # features/booking.feature:8
+    Given I have a valid booking ID                   # features/steps/booking_steps.py:46
+    When I get the details of the booking             # features/steps/booking_steps.py:51
+    Then I should see the correct booking information # features/steps/booking_steps.py:56
+
+  Scenario: Update a booking                          # features/booking.feature:13
+    Given I have a valid token                        # features/steps/booking_steps.py:15
+    Given I have a valid booking ID                   # features/steps/booking_steps.py:46
+    And I have new booking details                    # features/steps/booking_steps.py:67
+    When I update the booking                         # features/steps/booking_steps.py:81
+    Then I should see the updated booking information # features/steps/booking_steps.py:85
+
+  Scenario: Delete a booking                        # features/booking.feature:20
+    Given I have a valid token                      # features/steps/booking_steps.py:15
+    Given I have a valid booking ID                 # features/steps/booking_steps.py:46
+    When I delete the booking                       # features/steps/booking_steps.py:90
+    Then the booking should be deleted successfully # features/steps/booking_steps.py:94
+
+  Scenario: Trying to create a booking with invalid data  # features/booking.feature:26
+    Given I have invalid booking details                  # features/steps/booking_steps.py:98
+    When I try to create a booking                        # features/steps/booking_steps.py:111
+    Then I should receive a validation error              # features/steps/booking_steps.py:115
+
+Feature: API Ping # features/ping.feature:1
+
+  Scenario: Check availability       # features/ping.feature:2
+    When I ping the API              # features/steps/ping_steps.py:19
+    Then I should get an OK response # features/steps/ping_steps.py:23
+

@@ -1,0 +1,10 @@
+Feature: Booking App # features/booking.feature:1
+
+  Scenario: Correct booking                 # features/booking.feature:2
+    Given I am at home                      # features/steps/booking_steps.py:101
+    When I search for hotels in "Cusco"     # features/steps/booking_steps.py:111
+    And I select the second available hotel # features/steps/booking_steps.py:143
+    And I enter personal information        # features/steps/booking_steps.py:157
+    And I enter credit card information     # features/steps/booking_steps.py:181
+    Then I should see the booking           # features/steps/booking_steps.py:191
+
