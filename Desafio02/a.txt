@@ -1,0 +1,2359 @@
+Device connected: emulator-5554
+
+Resource ID: 
+Number of elements with this ID: 40
+  Element 1:
+    Unique Identifier: _1
+    text: 
+    class_name: hierarchy
+    description: None
+    enabled: False
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+  Element 2:
+    Unique Identifier: _2
+    text: 
+    class_name: android.widget.FrameLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+  Element 3:
+    Unique Identifier: _3
+    text: 
+    class_name: android.widget.LinearLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+  Element 4:
+    Unique Identifier: _4
+    text: 
+    class_name: android.widget.FrameLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+  Element 5:
+    Unique Identifier: _5
+    text: 
+    class_name: android.widget.ImageButton
+    description: Navigate up
+    enabled: True
+    clickable: True
+    focusable: True
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+  Element 6:
+    Unique Identifier: _6
+    text: Choose Your Stay
+Oct 14 - Oct 18
+    class_name: android.widget.TextView
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+  Element 7:
+    Unique Identifier: _7
+    text: 
+    class_name: androidx.appcompat.widget.LinearLayoutCompat
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+  Element 8:
+    Unique Identifier: _8
+    text: 
+    class_name: android.widget.LinearLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+  Element 9:
+    Unique Identifier: _9
+    text: 
+    class_name: android.widget.FrameLayout
+    description: 
+    enabled: True
+    clickable: True
+    focusable: True
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+  Element 10:
+    Unique Identifier: _10
+    text: 
+    class_name: android.widget.LinearLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+  Element 11:
+    Unique Identifier: _11
+    text: 
+    class_name: android.widget.FrameLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+  Element 12:
+    Unique Identifier: _12
+    text: 
+    class_name: android.widget.FrameLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+  Element 13:
+    Unique Identifier: _13
+    text: 2
+    class_name: android.widget.RadioButton
+    description: 
+    enabled: True
+    clickable: True
+    focusable: True
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+  Element 14:
+    Unique Identifier: _14
+    text: 3
+    class_name: android.widget.RadioButton
+    description: 
+    enabled: True
+    clickable: True
+    focusable: True
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+  Element 15:
+    Unique Identifier: _15
+    text: 
+    class_name: android.widget.LinearLayout
+    description: 
+    enabled: True
+    clickable: True
+    focusable: True
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+  Element 16:
+    Unique Identifier: _16
+    text: 
+    class_name: android.widget.LinearLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: True
+    package: 
+    hint: 
+    ---
+  Element 17:
+    Unique Identifier: _17
+    text: 
+    class_name: android.widget.LinearLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: True
+    package: 
+    hint: 
+    ---
+  Element 18:
+    Unique Identifier: _18
+    text: 
+    class_name: android.widget.LinearLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: True
+    package: 
+    hint: 
+    ---
+  Element 19:
+    Unique Identifier: _19
+    text: 
+    class_name: android.widget.LinearLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: True
+    package: 
+    hint: 
+    ---
+  Element 20:
+    Unique Identifier: _20
+    text: 
+    class_name: android.widget.LinearLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: True
+    package: 
+    hint: 
+    ---
+  Element 21:
+    Unique Identifier: _21
+    text: 
+    class_name: android.widget.LinearLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: True
+    package: 
+    hint: 
+    ---
+  Element 22:
+    Unique Identifier: _22
+    text: 
+    class_name: android.widget.LinearLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: True
+    package: 
+    hint: 
+    ---
+  Element 23:
+    Unique Identifier: _23
+    text: 
+    class_name: android.widget.LinearLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: True
+    package: 
+    hint: 
+    ---
+  Element 24:
+    Unique Identifier: _24
+    text: 
+    class_name: android.widget.LinearLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: True
+    package: 
+    hint: 
+    ---
+  Element 25:
+    Unique Identifier: _25
+    text: 
+    class_name: android.widget.LinearLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: True
+    package: 
+    hint: 
+    ---
+  Element 26:
+    Unique Identifier: _26
+    text: 
+    class_name: android.widget.LinearLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: True
+    package: 
+    hint: 
+    ---
+  Element 27:
+    Unique Identifier: _27
+    text: 
+    class_name: android.widget.TextSwitcher
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+  Element 28:
+    Unique Identifier: _28
+    text: 
+    class_name: android.widget.LinearLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+  Element 29:
+    Unique Identifier: _29
+    text: 
+    class_name: android.widget.FrameLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+  Element 30:
+    Unique Identifier: _30
+    text: 
+    class_name: android.widget.FrameLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+  Element 31:
+    Unique Identifier: _31
+    text: 
+    class_name: android.widget.ImageView
+    description: Android Setup notification: Finish setting up your sdk_gphone_x86
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+  Element 32:
+    Unique Identifier: _32
+    text: 
+    class_name: android.widget.ImageView
+    description: Settings notification: Virtual SD card
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+  Element 33:
+    Unique Identifier: _33
+    text: 
+    class_name: android.widget.FrameLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+  Element 34:
+    Unique Identifier: _34
+    text: 
+    class_name: android.widget.ImageView
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+  Element 35:
+    Unique Identifier: _35
+    text: 
+    class_name: android.widget.FrameLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+  Element 36:
+    Unique Identifier: _36
+    text: 
+    class_name: android.widget.RelativeLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+  Element 37:
+    Unique Identifier: _37
+    text: 
+    class_name: android.widget.RelativeLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+  Element 38:
+    Unique Identifier: _38
+    text: 
+    class_name: android.widget.RelativeLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+  Element 39:
+    Unique Identifier: _39
+    text: 
+    class_name: android.widget.RelativeLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+  Element 40:
+    Unique Identifier: _40
+    text: 
+    class_name: android.widget.RelativeLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/decor_content_parent
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.booking:id/decor_content_parent_1
+    text: 
+    class_name: android.view.ViewGroup
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/action_bar_container
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.booking:id/action_bar_container_1
+    text: 
+    class_name: android.widget.FrameLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/action_bar
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.booking:id/action_bar_1
+    text: 
+    class_name: android.view.ViewGroup
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/menu_share_hotel
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.booking:id/menu_share_hotel_1
+    text: 
+    class_name: android.widget.TextView
+    description: Share hotel
+    enabled: True
+    clickable: True
+    focusable: True
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+
+Resource ID: android:id/content
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: android:id/content_1
+    text: 
+    class_name: android.widget.FrameLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/room_list_root
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.booking:id/room_list_root_1
+    text: 
+    class_name: android.widget.RelativeLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/fragment_container
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.booking:id/fragment_container_1
+    text: 
+    class_name: android.widget.FrameLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/rooms_recycler_view
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.booking:id/rooms_recycler_view_1
+    text: 
+    class_name: androidx.recyclerview.widget.RecyclerView
+    description: 
+    enabled: True
+    clickable: False
+    focusable: True
+    focused: False
+    scrollable: True
+    selected: False
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/room_list_filters_layout
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.booking:id/room_list_filters_layout_1
+    text: 
+    class_name: android.view.ViewGroup
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/quick_filter_title_text_view
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.booking:id/quick_filter_title_text_view_1
+    text: Filters
+    class_name: android.widget.TextView
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/quick_filter_subtitle_text_view
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.booking:id/quick_filter_subtitle_text_view_1
+    text: (15 options available)
+    class_name: android.widget.TextView
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/quick_filter_scroll_container
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.booking:id/quick_filter_scroll_container_1
+    text: 
+    class_name: android.widget.HorizontalScrollView
+    description: 
+    enabled: True
+    clickable: False
+    focusable: True
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/quick_filter_scroll_content
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.booking:id/quick_filter_scroll_content_1
+    text: 
+    class_name: android.widget.LinearLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/quick_filter_radio_button
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.booking:id/quick_filter_radio_button_1
+    text: Breakfast included
+    class_name: android.widget.RadioButton
+    description: 
+    enabled: True
+    clickable: True
+    focusable: True
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/quick_filter_container
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.booking:id/quick_filter_container_1
+    text: 
+    class_name: android.widget.LinearLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/quick_filters_occupancy_container
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.booking:id/quick_filters_occupancy_container_1
+    text: 
+    class_name: android.widget.LinearLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/quick_filters_occupancy_title
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.booking:id/quick_filters_occupancy_title_1
+    text: Max guests
+    class_name: android.widget.TextView
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/quick_filters_occupancy_flow_container
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.booking:id/quick_filters_occupancy_flow_container_1
+    text: 
+    class_name: android.view.ViewGroup
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/room_list_card_wrapper_container
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.booking:id/room_list_card_wrapper_container_1
+    text: 
+    class_name: android.widget.FrameLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/list_item
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.booking:id/list_item_1
+    text: 
+    class_name: android.widget.LinearLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: True
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/rooms_item_title
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.booking:id/rooms_item_title_1
+    text: Room with Bunk Beds-One Twin Bed over One Queen Bed
+    class_name: android.widget.TextView
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: True
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/room_capacity_icons_view
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.booking:id/room_capacity_icons_view_1
+    text: 
+    class_name: android.widget.LinearLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: True
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/room_capacity_max_guests_text_tv
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.booking:id/room_capacity_max_guests_text_tv_1
+    text: Price for:
+    class_name: android.widget.TextView
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: True
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/iconfont_room_capacity_icon_tv
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.booking:id/iconfont_room_capacity_icon_tv_1
+    text: 11
+    class_name: android.widget.TextView
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: True
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/iconfont_capacity_icon_plus_view
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.booking:id/iconfont_capacity_icon_plus_view_1
+    text: +
+    class_name: android.widget.TextView
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: True
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/iconfont_capacity_icon_children_tv
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.booking:id/iconfont_capacity_icon_children_tv_1
+    text: 1
+    class_name: android.widget.TextView
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: True
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/room_capacity_child_age
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.booking:id/room_capacity_child_age_1
+    text: (5 years old)
+    class_name: android.widget.TextView
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: True
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/rl_bed_sizes_container
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.booking:id/rl_bed_sizes_container_1
+    text: 
+    class_name: android.widget.LinearLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: True
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/rl_alt_bed_sizes
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.booking:id/rl_alt_bed_sizes_1
+    text: 
+    class_name: android.widget.LinearLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: True
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/rl_alt_bed_sizes_icon
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.booking:id/rl_alt_bed_sizes_icon_1
+    text: ?
+    class_name: android.widget.TextView
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: True
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/rl_alt_bed_sizes_text
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.booking:id/rl_alt_bed_sizes_text_1
+    text: 1 twin bed, 1 queen bed
+    class_name: android.widget.TextView
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: True
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/rl_unit_size_container
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.booking:id/rl_unit_size_container_1
+    text: 
+    class_name: android.widget.LinearLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: True
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/rl_unit_size_label
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.booking:id/rl_unit_size_label_1
+    text: Size:
+    class_name: android.widget.TextView
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: True
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/rl_unit_size_text
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.booking:id/rl_unit_size_text_1
+    text: 172 ft2
+    class_name: android.widget.TextView
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: True
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/listitem_info_icon
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.booking:id/listitem_info_icon_1
+    text: ?
+    class_name: android.widget.TextView
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: True
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/transactional_policies_info_item_icon_image_view
+Number of elements with this ID: 2
+  Element 1:
+    Unique Identifier: com.booking:id/transactional_policies_info_item_icon_image_view_1
+    text: 
+    class_name: android.widget.ImageView
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: True
+    package: 
+    hint: 
+    ---
+  Element 2:
+    Unique Identifier: com.booking:id/transactional_policies_info_item_icon_image_view_2
+    text: 
+    class_name: android.widget.ImageView
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: True
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/transactional_policies_info_item_text
+Number of elements with this ID: 2
+  Element 1:
+    Unique Identifier: com.booking:id/transactional_policies_info_item_text_1
+    text: Free cancellation until 11:59 PM on October 09
+    class_name: android.widget.TextView
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: True
+    package: 
+    hint: 
+    ---
+  Element 2:
+    Unique Identifier: com.booking:id/transactional_policies_info_item_text_2
+    text: Pay at the property
+    class_name: android.widget.TextView
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: True
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/room_item_facility_highlights
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.booking:id/room_item_facility_highlights_1
+    text: 
+    class_name: android.view.ViewGroup
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: True
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/card_element_text_icon
+Number of elements with this ID: 4
+  Element 1:
+    Unique Identifier: com.booking:id/card_element_text_icon_1
+    text: ?
+    class_name: android.widget.TextView
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: True
+    package: 
+    hint: 
+    ---
+  Element 2:
+    Unique Identifier: com.booking:id/card_element_text_icon_2
+    text: ?
+    class_name: android.widget.TextView
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: True
+    package: 
+    hint: 
+    ---
+  Element 3:
+    Unique Identifier: com.booking:id/card_element_text_icon_3
+    text: ?
+    class_name: android.widget.TextView
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: True
+    package: 
+    hint: 
+    ---
+  Element 4:
+    Unique Identifier: com.booking:id/card_element_text_icon_4
+    text: ?
+    class_name: android.widget.TextView
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: True
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/card_element_text
+Number of elements with this ID: 4
+  Element 1:
+    Unique Identifier: com.booking:id/card_element_text_1
+    text: Free WiFi
+    class_name: android.widget.TextView
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: True
+    package: 
+    hint: 
+    ---
+  Element 2:
+    Unique Identifier: com.booking:id/card_element_text_2
+    text: Air conditioning
+    class_name: android.widget.TextView
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: True
+    package: 
+    hint: 
+    ---
+  Element 3:
+    Unique Identifier: com.booking:id/card_element_text_3
+    text: Flat-screen TV
+    class_name: android.widget.TextView
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: True
+    package: 
+    hint: 
+    ---
+  Element 4:
+    Unique Identifier: com.booking:id/card_element_text_4
+    text: Minibar
+    class_name: android.widget.TextView
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: True
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/room_price
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.booking:id/room_price_1
+    text: 
+    class_name: android.view.ViewGroup
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: True
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/room_price_container
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.booking:id/room_price_container_1
+    text: 
+    class_name: android.widget.LinearLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: True
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/room_detail_badges_spreator
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.booking:id/room_detail_badges_spreator_1
+    text: 
+    class_name: android.view.View
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: True
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/price_container
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.booking:id/price_container_1
+    text: 
+    class_name: android.widget.LinearLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: True
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/price_view_room_list
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.booking:id/price_view_room_list_1
+    text: 
+    class_name: android.view.ViewGroup
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: True
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/price_view_stay_details
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.booking:id/price_view_stay_details_1
+    text: Price for 4 nights
+    class_name: android.widget.TextView
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: True
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/price_view_holder
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.booking:id/price_view_holder_1
+    text: 
+    class_name: android.view.ViewGroup
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: True
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/price_view_price
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.booking:id/price_view_price_1
+    text: US$646
+    class_name: android.widget.TextView
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: True
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/price_view_taxes_and_charges
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.booking:id/price_view_taxes_and_charges_1
+    text: + US$181 taxes and charges
+    class_name: android.widget.TextView
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: True
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/room_linear_layout
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.booking:id/room_linear_layout_1
+    text: 
+    class_name: android.widget.LinearLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: True
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/rooms_item_select_layout
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.booking:id/rooms_item_select_layout_1
+    text: 
+    class_name: android.widget.LinearLayout
+    description: 
+    enabled: True
+    clickable: True
+    focusable: True
+    focused: False
+    scrollable: False
+    selected: True
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/rooms_item_select_spinner
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.booking:id/rooms_item_select_spinner_1
+    text: 
+    class_name: android.widget.Spinner
+    description: 
+    enabled: True
+    clickable: True
+    focusable: True
+    focused: False
+    scrollable: True
+    selected: True
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/rooms_item_select_text_view
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.booking:id/rooms_item_select_text_view_1
+    text: 1 room selected
+    class_name: android.widget.TextView
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/rooms_item_select_spinner_triangle
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.booking:id/rooms_item_select_spinner_triangle_1
+    text: ?
+    class_name: android.widget.TextView
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: True
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/rooms_item_select_remove_separator
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.booking:id/rooms_item_select_remove_separator_1
+    text: 
+    class_name: android.view.View
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: True
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/rooms_item_select_remove_view
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.booking:id/rooms_item_select_remove_view_1
+    text: ?
+    class_name: android.widget.TextView
+    description: 
+    enabled: True
+    clickable: True
+    focusable: True
+    focused: False
+    scrollable: False
+    selected: True
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/book_now_popup
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.booking:id/book_now_popup_1
+    text: 
+    class_name: android.widget.LinearLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/book_now_text
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.booking:id/book_now_text_1
+    text: It only takes 2 minutes
+    class_name: android.widget.TextView
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/book_now_layout
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.booking:id/book_now_layout_1
+    text: 
+    class_name: android.widget.LinearLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/roomlist_action_bar
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.booking:id/roomlist_action_bar_1
+    text: 
+    class_name: android.widget.LinearLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/top_border
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.booking:id/top_border_1
+    text: 
+    class_name: android.view.View
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/info_layout
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.booking:id/info_layout_1
+    text: 
+    class_name: android.widget.LinearLayout
+    description: 
+    enabled: True
+    clickable: True
+    focusable: True
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/info_title
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.booking:id/info_title_1
+    text: US$646 ? 1 room
+    class_name: android.widget.TextView
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/info_subtitle
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.booking:id/info_subtitle_1
+    text: + US$181 taxes and charges
+    class_name: android.widget.TextView
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.booking:id/main_action
+Number of elements with this ID: 2
+  Element 1:
+    Unique Identifier: com.booking:id/main_action_1
+    text: 
+    class_name: android.widget.FrameLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+  Element 2:
+    Unique Identifier: com.booking:id/main_action_2
+    text: Reserve
+    class_name: android.widget.Button
+    description: 
+    enabled: True
+    clickable: True
+    focusable: True
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+
+Resource ID: android:id/statusBarBackground
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: android:id/statusBarBackground_1
+    text: 
+    class_name: android.view.View
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.android.systemui:id/status_bar_container
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.android.systemui:id/status_bar_container_1
+    text: 
+    class_name: android.widget.FrameLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.android.systemui:id/status_bar
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.android.systemui:id/status_bar_1
+    text: 
+    class_name: android.widget.FrameLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.android.systemui:id/status_bar_contents
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.android.systemui:id/status_bar_contents_1
+    text: 
+    class_name: android.widget.LinearLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.android.systemui:id/status_bar_left_side
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.android.systemui:id/status_bar_left_side_1
+    text: 
+    class_name: android.widget.LinearLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.android.systemui:id/clock
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.android.systemui:id/clock_1
+    text: 7:04
+    class_name: android.widget.TextView
+    description: 7:04 PM
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.android.systemui:id/notification_icon_area
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.android.systemui:id/notification_icon_area_1
+    text: 
+    class_name: android.widget.FrameLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.android.systemui:id/notification_icon_area_inner
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.android.systemui:id/notification_icon_area_inner_1
+    text: 
+    class_name: android.widget.LinearLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.android.systemui:id/notificationIcons
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.android.systemui:id/notificationIcons_1
+    text: 
+    class_name: android.widget.FrameLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.android.systemui:id/cutout_space_view
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.android.systemui:id/cutout_space_view_1
+    text: 
+    class_name: android.view.View
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.android.systemui:id/system_icon_area
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.android.systemui:id/system_icon_area_1
+    text: 
+    class_name: android.widget.LinearLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.android.systemui:id/system_icons
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.android.systemui:id/system_icons_1
+    text: 
+    class_name: android.widget.LinearLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.android.systemui:id/statusIcons
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.android.systemui:id/statusIcons_1
+    text: 
+    class_name: android.widget.LinearLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.android.systemui:id/wifi_combo
+Number of elements with this ID: 2
+  Element 1:
+    Unique Identifier: com.android.systemui:id/wifi_combo_1
+    text: 
+    class_name: android.widget.FrameLayout
+    description: Wifi signal full.
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+  Element 2:
+    Unique Identifier: com.android.systemui:id/wifi_combo_2
+    text: 
+    class_name: android.widget.FrameLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.android.systemui:id/wifi_group
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.android.systemui:id/wifi_group_1
+    text: 
+    class_name: android.widget.LinearLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.android.systemui:id/wifi_signal
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.android.systemui:id/wifi_signal_1
+    text: 
+    class_name: android.widget.ImageView
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.android.systemui:id/mobile_combo
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.android.systemui:id/mobile_combo_1
+    text: 
+    class_name: android.widget.FrameLayout
+    description: Phone three bars.
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.android.systemui:id/mobile_group
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.android.systemui:id/mobile_group_1
+    text: 
+    class_name: android.widget.LinearLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.android.systemui:id/mobile_signal
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.android.systemui:id/mobile_signal_1
+    text: 
+    class_name: android.widget.ImageView
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.android.systemui:id/battery
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.android.systemui:id/battery_1
+    text: 
+    class_name: android.widget.LinearLayout
+    description: Battery 100 percent.
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.android.systemui:id/navigation_bar_frame
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.android.systemui:id/navigation_bar_frame_1
+    text: 
+    class_name: android.widget.FrameLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.android.systemui:id/navigation_inflater
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.android.systemui:id/navigation_inflater_1
+    text: 
+    class_name: android.widget.FrameLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.android.systemui:id/horizontal
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.android.systemui:id/horizontal_1
+    text: 
+    class_name: android.widget.FrameLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.android.systemui:id/nav_buttons
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.android.systemui:id/nav_buttons_1
+    text: 
+    class_name: android.widget.FrameLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.android.systemui:id/ends_group
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.android.systemui:id/ends_group_1
+    text: 
+    class_name: android.widget.LinearLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.android.systemui:id/back
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.android.systemui:id/back_1
+    text: 
+    class_name: android.widget.ImageView
+    description: Back
+    enabled: True
+    clickable: True
+    focusable: True
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.android.systemui:id/recent_apps
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.android.systemui:id/recent_apps_1
+    text: 
+    class_name: android.widget.ImageView
+    description: Overview
+    enabled: True
+    clickable: True
+    focusable: True
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.android.systemui:id/center_group
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.android.systemui:id/center_group_1
+    text: 
+    class_name: android.widget.LinearLayout
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.android.systemui:id/home
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.android.systemui:id/home_1
+    text: 
+    class_name: android.widget.FrameLayout
+    description: 
+    enabled: True
+    clickable: True
+    focusable: True
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.android.systemui:id/home_button
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.android.systemui:id/home_button_1
+    text: 
+    class_name: android.widget.ImageView
+    description: Home
+    enabled: True
+    clickable: True
+    focusable: True
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.android.systemui:id/white_cutout
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.android.systemui:id/white_cutout_1
+    text: 
+    class_name: android.widget.ImageView
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+
+Resource ID: com.android.systemui:id/white
+Number of elements with this ID: 1
+  Element 1:
+    Unique Identifier: com.android.systemui:id/white_1
+    text: 
+    class_name: android.widget.ImageView
+    description: 
+    enabled: True
+    clickable: False
+    focusable: False
+    focused: False
+    scrollable: False
+    selected: False
+    package: 
+    hint: 
+    ---
+AK22222
+AK22222
+No se pudo encontrar o clickear el campo de búsqueda (índice 2)
+No se pudo encontrar o clickear el botón (índice 2)
+No se pudo encontrar el NumberPicker
