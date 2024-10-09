@@ -3,6 +3,9 @@ from behave import given, when, then
 import uiautomator2 as u2
 import time
 from typing import Optional
+from config import config
+
+
 
 # Constants
 TIMEOUT = 10
@@ -124,14 +127,14 @@ def step_impl(context, city):
         place_results[0].click()
 
     # Select dates
-    wait_and_click(context.d, "14 October 2024")
-    wait_and_click(context.d, "18 October 2024")
+    wait_and_click(context.d, config.CHECK_IN_DATE)
+    wait_and_click(context.d, config.CHECK_OUT_DATE)
     find_and_click_by_resource_id(context.d, "com.booking:id/facet_date_picker_confirm")
 
     # Add a child
     find_and_click_by_resource_id(context.d, "com.booking:id/facet_search_box_basic_field_label", instance=2)
     find_and_click_by_resource_id(context.d, "com.booking:id/bui_input_stepper_add_button", instance=2)
-    scroll_numberpicker_to_value(context.d, "5 years old")
+    scroll_numberpicker_to_value(context.d, config.CHILD_AGE)
 
     time.sleep(1)
     find_and_click_by_resource_id(context.d, "com.booking:id/group_config_apply_button")
@@ -155,12 +158,13 @@ def step_impl(context):
 def step_impl(context):
     time.sleep(2)
     personal_info = [
-        ("com.booking:id/bui_input_container_content_1", "John"),
-        ("com.booking:id/bui_input_container_content_2", "Doe"),
-        ("com.booking:id/bui_input_container_content_3", "john.doe@example.com"),
-        ("com.booking:id/bui_input_container_content_4", "Colombia"),
-        ("com.booking:id/bui_input_container_content_5", "999999999")
+        ("com.booking:id/bui_input_container_content_1", config.FIRST_NAME),
+        ("com.booking:id/bui_input_container_content_2", config.LAST_NAME),
+        ("com.booking:id/bui_input_container_content_3", config.EMAIL),
+        ("com.booking:id/bui_input_container_content_4", config.COUNTRY),
+        ("com.booking:id/bui_input_container_content_5", config.PHONE)
     ]
+
     for unique_id, text in personal_info:
         input_text_to_element(context.d, unique_id, text)
 
@@ -177,13 +181,12 @@ def step_impl(context):
 @when('I enter credit card information')
 def step_impl(context):
     if context.d(resourceId="com.booking:id/new_credit_card_number_edit").exists:
-        input_text_to_element(context.d, "com.booking:id/new_credit_card_number_edit_1", "9999999")
+        input_text_to_element(context.d, "com.booking:id/new_credit_card_number_edit_1", config.CARD_NUMBER)
         time.sleep(2)
         context.d(text="Select your card type").click()
         time.sleep(1)
-        context.d(text="Visa").click()
-        input_text_to_element(context.d, "com.booking:id/new_credit_card_expiry_date_edit_1", "02/25")
-
+        context.d(text=config.CARD_TYPE).click()
+        input_text_to_element(context.d, "com.booking:id/new_credit_card_expiry_date_edit_1", config.CARD_EXPIRY)
 
 @then('I should see the booking')
 def step_impl(context):
