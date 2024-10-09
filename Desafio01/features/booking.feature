@@ -1,30 +1,30 @@
 Feature: API Booking
 
-  Scenario: Crear una booking
-    Given tengo detalles validos de booking
-    When creo una booking
-    Then deberia recibir una confirmacion de booking
+  Scenario: Create a booking
+    Given I have valid booking details
+    When I create a booking
+    Then I should receive a confirmation from booking
 
-  Scenario: Obtener detalles de una booking
-    Given tengo un ID de booking valido
-    When obtengo los detalles de la booking
-    Then deberia ver la informacion correcta de la booking
+  Scenario: Getting details of a booking
+    Given I have a valid booking ID
+    When I get the details of the booking
+    Then I should see the correct booking information
 
-  Scenario: Actualizar una booking
-    Given tengo un token valido
-    Given tengo un ID de booking valido
-    And tengo nuevos detalles de booking
-    When actualizo la booking
-    Then deberia ver la informacion actualizada de la booking
+  Scenario: Update a booking
+    Given I have a valid token
+    Given I have a valid booking ID
+    And I have new booking details
+    When I update the booking
+    Then I should see the updated booking information
 
-  Scenario: Eliminar una booking
-    Given tengo un token valido
-    Given tengo un ID de booking valido
-    When elimino la booking
-    Then la booking deberia ser eliminada con exito
+  Scenario: Delete a booking
+    Given I have a valid token
+    Given I have a valid booking ID
+    When I delete the booking
+    Then the booking should be deleted successfully
 
-  Scenario: Intentar crear una booking con datos inválidos
-    Given tengo detalles invalidos de booking
-    When intento crear una booking
-    Then deberia recibir un error de validacion
+  Scenario: Trying to create a booking with invalid data
+    Given I have invalid booking details
+    When I try to create a booking
+    Then I should receive a validation error
 
