@@ -2,7 +2,6 @@ import requests
 from behave import given, when, then
 
 def auth_request(context, credentials):
-    """Función auxiliar para realizar solicitudes de autenticación."""
     try:
         response = requests.post(context.endpoints['auth'], json=credentials, timeout=10)
         response.raise_for_status()
@@ -11,30 +10,30 @@ def auth_request(context, credentials):
         print(f"Error en la solicitud de autenticación: {str(e)}")
         raise
 
-@given('que tengo credenciales validas')
+@given('I have valid credentials')
 def step_impl(context):
     context.credentials = {"username": "admin", "password": "password123"}
 
-@when('me autentico en la API con credenciales validas')
+@when('I authenticate in the API with valid credentials')
 def step_impl(context):
     context.response = auth_request(context, context.credentials)
 
-@then('deberia recibir un token valido')
+@then('I should receive a valid token')
 def step_impl(context):
     assert context.response.status_code == 200, f"Código de estado esperado 200, pero se recibió {context.response.status_code}"
     response_json = context.response.json()
     assert "token" in response_json, "No se encontró 'token' en la respuesta"
     context.token = response_json["token"]
 
-@given('que tengo credenciales invalidas')
+@given('I have invalid credentials')
 def step_impl(context):
     context.credentials = {"username": "invalid", "password": "invalid"}
 
-@when('me autentico en la API con credenciales invalidas')
+@when('I authenticate in the API with invalid credentials')
 def step_impl(context):
     context.response = auth_request(context, context.credentials)
 
-@then('deberia recibir un mensaje de error')
+@then('I should receive an error message')
 def step_impl(context):
     assert context.response.status_code == 200, f"Código de estado esperado 200, pero se recibió {context.response.status_code}"
     response_json = context.response.json()

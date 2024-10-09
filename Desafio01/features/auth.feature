@@ -1,10 +1,10 @@
 Feature: API Auth
-  Scenario: Autenticacion valida
-    Given que tengo credenciales validas
-    When me autentico en la API con credenciales validas
-    Then deberia recibir un token valido
+  Scenario: Valid authentication
+    Given I have valid credentials
+    When I authenticate in the API with valid credentials
+    Then I should receive a valid token
 
-  Scenario: Autenticacion invalida
-    Given que tengo credenciales invalidas
-    When me autentico en la API con credenciales invalidas
-    Then deberia recibir un mensaje de error
+  Scenario: Invalid authentication
+    Given I have invalid credentials
+    When I authenticate in the API with invalid credentials
+    Then I should receive an error message
