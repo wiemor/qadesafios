@@ -118,7 +118,7 @@ def step_impl(context, city):
         time.sleep(1)
         context.d.send_keys(city)
         print(f"Destination '{city}' entered successfully")
-        time.sleep(2)
+        time.sleep(8)
 
     # Select the first result
     results = context.d(className="android.widget.TextView")
